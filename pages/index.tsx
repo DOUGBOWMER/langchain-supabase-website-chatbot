@@ -8,6 +8,8 @@ import ReactMarkdown from 'react-markdown';
 import LoadingDots from '@/components/ui/LoadingDots';
 
 export default function Home() {
+  const [Service, setService] =useState("Tax Return")
+  const [ContactInfo, setContanctInfo] =useState({name:"", email:""})
   const [query, setQuery] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
   const [messageState, setMessageState] = useState<{
@@ -17,7 +19,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: 'Hi there its Tom! What would like to learn about notion?',
+        message: `Hi there, my name is AlphaGPT, I am a highly trained Ai Assistant and i will be helping you with your ${Service}. Before we dive in, could I get your name and phone number? This will help us keep in touch incase we get interupted! Are you ready to begin?`,
         type: 'apiMessage',
       },
     ],
@@ -124,7 +126,7 @@ export default function Home() {
       <Layout>
         <div className="mx-auto flex flex-col gap-4">
           <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center">
-            Thomas Frank Notion Guide ChatBot
+           AiQBOT - Sales TomBot
           </h1>
           <main className={styles.main}>
             <div className={styles.cloud}>
@@ -189,7 +191,7 @@ export default function Home() {
                     placeholder={
                       loading
                         ? 'Waiting for response...'
-                        : 'How does notion api work?'
+                        : 'What brings you in today?'
                     }
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}

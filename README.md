@@ -1,33 +1,20 @@
-# LangChain & Supabase - Create a ChatGpt Chatbot for Your Website
+<!-- The visual guide of this repo and tutorial is in the `visual guide` folder. -->
 
-Create a chatgpt chatbot for your website using LangChain, Supabase, Typescript, Openai, and Next.js. LangChain is a framework that makes it easier to build scalable AI/LLM apps. Supabase is an open source Postgres database that can store embeddings using a pg vector extension.
+<!-- ## Development
 
-[Tutorial video](https://www.youtube.com/watch?v=prbloUGlvLE)
+[1. Clone the repo
 
-[Get in touch via twitter if you need help](https://twitter.com/mayowaoshin)
-
-The visual guide of this repo and tutorial is in the `visual guide` folder.
-
-## Development
-
-1. Clone the repo
-
-```
 git clone [github https url]
-```
 
 2. Install packages
 
-```
 pnpm install
-```
 
 3. Set up your `.env` file
 
 - Copy `.env.local.example` into `.env`
-  Your `.env` file should look like this:
+  Your `.env` file should look like this:]
 
-```
 OPENAI_API_KEY=
 
 NEXT_PUBLIC_SUPABASE_URL=
@@ -46,6 +33,7 @@ SUPABASE_SERVICE_ROLE_KEY=
 You can add your custom elements to the metadata to meet your needs, note however that the default loader format as per below expects at least a string for `pageContent` and `metadata` that contains a `source` property as a returned value:
 
 ```
+
 async load(): Promise<Document[]>{
   const $ = await this.scrape();
       const text = $("body").text();
@@ -80,3 +68,5 @@ Once you've verified that the embeddings and content have been successfully adde
 Frontend of this repo is inspired by [langchain-chat-nextjs](https://github.com/zahidkhawaja/langchain-chat-nextjs)
 
 This repo uses in-depth Notion guides from the [website](https://thomasjfrank.com/) of productivity expert, Thomas Frank.
+
+# NOTES
