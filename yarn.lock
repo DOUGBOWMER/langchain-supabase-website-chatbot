@@ -588,7 +588,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/postgrest-js@npm:^1.8.5":
+"@supabase/postgrest-js@npm:^1.8.6":
   version: 1.8.6
   resolution: "@supabase/postgrest-js@npm:1.8.6"
   dependencies:
@@ -618,17 +618,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/supabase-js@npm:^2.10.0":
-  version: 2.38.4
-  resolution: "@supabase/supabase-js@npm:2.38.4"
+"@supabase/supabase-js@npm:^2.38.5":
+  version: 2.38.5
+  resolution: "@supabase/supabase-js@npm:2.38.5"
   dependencies:
     "@supabase/functions-js": ^2.1.5
     "@supabase/gotrue-js": ^2.56.0
     "@supabase/node-fetch": ^2.6.14
-    "@supabase/postgrest-js": ^1.8.5
+    "@supabase/postgrest-js": ^1.8.6
     "@supabase/realtime-js": ^2.8.4
     "@supabase/storage-js": ^2.5.4
-  checksum: d4bc83be5c36d00d5c90a8fbf1db19b7653c2eeaaf75dcf53fffbf256c5e3230b32ee23589b1760edd6e4d74302ba2cdb66b7f91bb0c6c6e3ae9acc6f96435a7
+  checksum: db6b77ee1edcc71971e530caaecc0e3d969736212b07dc3505b3397b8daa46582bc1ea7e4ffdb353096af722640d277ee32a5b357f7dc06b41361c336d6bb0e4
   languageName: node
   linkType: hard
 
@@ -977,12 +977,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/next@npm:4.0.14":
-  version: 4.0.14
-  resolution: "@vercel/next@npm:4.0.14"
+"@vercel/next@npm:4.0.15":
+  version: 4.0.15
+  resolution: "@vercel/next@npm:4.0.15"
   dependencies:
     "@vercel/nft": 0.24.2
-  checksum: f0fbb54d400f249d3e82af8f6fc290a20e5a1ed3b297daabc19f86bed98e0843f11ad3b9ca8c97984901d4a028b988f7ea8ea043505566c6101f22271673fc01
+  checksum: 390e67884b95742ddf8a1cdf7db08455f498053c110c70839c26d72aa75fdf29059ffdaa325268b8e5d5214ff3af776240dde9ccffb4d5283fa5f5e43ace2375
   languageName: node
   linkType: hard
 
@@ -1076,10 +1076,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/ruby@npm:2.0.2":
-  version: 2.0.2
-  resolution: "@vercel/ruby@npm:2.0.2"
-  checksum: 7e15e8302a09ad3b2db12d958c2501701afccec8b845451096e5a89b6f442cfd55290b98ab027ba606f875a16a4fd724b6356b650aaa0cd4e0c07a4088a1bcde
+"@vercel/ruby@npm:2.0.3":
+  version: 2.0.3
+  resolution: "@vercel/ruby@npm:2.0.3"
+  checksum: f15852b857e03ec37a58a42effb333a0012f921dd3ef55ce61fe74efc2cd5ca5cf923c4e089fffc068b33ffb4a8ce244944d6d4d1188cfb07eb23494cd28cdbe
   languageName: node
   linkType: hard
 
@@ -1469,7 +1469,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.13":
+"autoprefixer@npm:^10.4.16":
   version: 10.4.16
   resolution: "autoprefixer@npm:10.4.16"
   dependencies:
@@ -2071,7 +2071,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"decamelize@npm:^1.2.0":
+"decamelize@npm:1.2.0":
   version: 1.2.0
   resolution: "decamelize@npm:1.2.0"
   checksum: ad8c51a7e7e0720c70ec2eeb1163b66da03e7616d7b98c9ef43cce2416395e84c1e9548dd94f5f6ffecfee9f8b94251fc57121a8b021f2ff2469b2bae247b8aa
@@ -4392,26 +4392,39 @@ __metadata:
   languageName: node
   linkType: hard
 
-"langchain@npm:^0.0.194":
-  version: 0.0.194
-  resolution: "langchain@npm:0.0.194"
+"langchain-core@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "langchain-core@npm:0.0.1"
+  dependencies:
+    ansi-styles: ^5.0.0
+    camelcase: 6
+    decamelize: 1.2.0
+    js-tiktoken: ^1.0.7
+    langsmith: ^0.0.48
+    p-queue: ^6.6.2
+    p-retry: 4
+    uuid: ^9.0.0
+  checksum: 02b0df7d95c9457d9a2cced55feb46626466466785836b3f8f2017bbe3dcc75baf59636b92ca5b543d00341c4492968f5bffb11d1e46666d30bd4d231b2c2beb
+  languageName: node
+  linkType: hard
+
+"langchain@npm:^0.0.196":
+  version: 0.0.196
+  resolution: "langchain@npm:0.0.196"
   dependencies:
     "@anthropic-ai/sdk": ^0.9.1
-    ansi-styles: ^5.0.0
     binary-extensions: ^2.2.0
-    camelcase: 6
-    decamelize: ^1.2.0
     expr-eval: ^2.0.2
     flat: ^5.0.2
     js-tiktoken: ^1.0.7
     js-yaml: ^4.1.0
     jsonpointer: ^5.0.1
+    langchain-core: ^0.0.1
     langchainhub: ~0.0.6
     langsmith: ~0.0.48
     ml-distance: ^4.0.0
     openai: ^4.19.0
     openapi-types: ^12.1.3
-    p-queue: ^6.6.2
     p-retry: 4
     uuid: ^9.0.0
     yaml: ^2.2.1
@@ -4713,7 +4726,7 @@ __metadata:
       optional: true
     youtubei.js:
       optional: true
-  checksum: 3f3319cb014262a9e0e87f7d3acfd472c4a41a8ad771831a4da7cde71fdf7715681b367b3aac8dbe578916d8e14deb8a6529f59d22f6f92e2a3f535ff6b7ffcc
+  checksum: 3201de8bf8443158e18041913cc77313d12d1dffc81286fea7513c7165169870ea7ad8feea1ed837a50d4338dc17c77253855a76000a20467bf851ec46a1e5d3
   languageName: node
   linkType: hard
 
@@ -4724,7 +4737,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"langsmith@npm:~0.0.48":
+"langsmith@npm:^0.0.48, langsmith@npm:~0.0.48":
   version: 0.0.48
   resolution: "langsmith@npm:0.0.48"
   dependencies:
@@ -4807,9 +4820,9 @@ __metadata:
   linkType: hard
 
 "lru-cache@npm:^10.0.1, lru-cache@npm:^9.1.1 || ^10.0.0":
-  version: 10.0.3
-  resolution: "lru-cache@npm:10.0.3"
-  checksum: e4b100c5a6b2ac778c0f63711499b5098686205c57907d8c04a413270d37089112d9bd0192dfa36940eb5d94b88c7db54fdb6fd23319c8f89903cfd4323ea06c
+  version: 10.1.0
+  resolution: "lru-cache@npm:10.1.0"
+  checksum: 58056d33e2500fbedce92f8c542e7c11b50d7d086578f14b7074d8c241422004af0718e08a6eaae8705cee09c77e39a61c1c79e9370ba689b7010c152e6a76ab
   languageName: node
   linkType: hard
 
@@ -6162,7 +6175,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.31, postcss@npm:^8.4.21, postcss@npm:^8.4.23":
+"postcss@npm:8.4.31, postcss@npm:^8.4.23, postcss@npm:^8.4.31":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
   dependencies:
@@ -7013,27 +7026,27 @@ __metadata:
   resolution: "supabase-langchain-notion@workspace:."
   dependencies:
     "@microsoft/fetch-event-source": ^2.0.1
-    "@supabase/supabase-js": ^2.10.0
+    "@supabase/supabase-js": ^2.38.5
     "@types/node": ^18.14.6
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
     "@typescript-eslint/parser": ^5.54.0
-    autoprefixer: ^10.4.13
+    autoprefixer: ^10.4.16
     cheerio: 1.0.0-rc.12
     clsx: ^1.2.1
     daisyui: ^4.4.2
     dotenv: ^16.0.3
     eslint: 8.35.0
     eslint-config-next: 13.2.3
-    langchain: ^0.0.194
+    langchain: ^0.0.196
     next: ^13.5.6
-    postcss: ^8.4.21
+    postcss: ^8.4.31
     prettier: ^2.8.4
     react: 18.2.0
     react-dom: 18.2.0
     react-markdown: ^8.0.5
     tailwind-merge: ^1.10.0
-    tailwindcss: ^3.2.7
+    tailwindcss: ^3.3.5
     tsx: ^3.12.3
     typescript: ^4.9.5
     vercel: ^32.5.5
@@ -7063,7 +7076,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.2.7":
+"tailwindcss@npm:^3.3.5":
   version: 3.3.5
   resolution: "tailwindcss@npm:3.3.5"
   dependencies:
@@ -7658,25 +7671,25 @@ __metadata:
   linkType: hard
 
 "vercel@npm:^32.5.5":
-  version: 32.5.5
-  resolution: "vercel@npm:32.5.5"
+  version: 32.5.6
+  resolution: "vercel@npm:32.5.6"
   dependencies:
     "@vercel/build-utils": 7.2.5
     "@vercel/fun": 1.1.0
     "@vercel/go": 3.0.3
     "@vercel/hydrogen": 1.0.1
-    "@vercel/next": 4.0.14
+    "@vercel/next": 4.0.15
     "@vercel/node": 3.0.11
     "@vercel/python": 4.1.0
     "@vercel/redwood": 2.0.5
     "@vercel/remix-builder": 2.0.11
-    "@vercel/ruby": 2.0.2
+    "@vercel/ruby": 2.0.3
     "@vercel/static-build": 2.0.12
     chokidar: 3.3.1
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: b5134cf600fa65d52a17d6338d55182b7f613bfec44887616db8deb10ff196f6cfbfccbdc00aa2997efaac147e7831d161965392f9e0b5ec48568e2cb459e9fb
+  checksum: 092fec20e39c7f2ca56edfbfb0314ec5a8102627c37e977f6d301164afab83762f9e8f4cb818c7548e100676e6e598c3223cd8d70f5203027fe05cb0bba79be9
   languageName: node
   linkType: hard
 

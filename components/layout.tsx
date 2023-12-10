@@ -19,12 +19,12 @@ export default function Layout({ children }: LayoutProps) {
               </div>
               <div>
               <Link href="/" className="hover:text-slate-600 cursor-pointer">
-              Start My return
+              Sales Agent
             </Link>
               </div>
               <div>
               <Link href="/" className="hover:text-slate-600 cursor-pointer">
-              Check My Return
+              Customer Service
             </Link>
               </div>
               <div>
@@ -41,7 +41,7 @@ export default function Layout({ children }: LayoutProps) {
         </div>
       </header>
       <div className="container">
-              <main className="flex w-full flex-1 flex-col overflow-hidden">
+              <main className="flex w-1/2 flex-1  justify-self-end flex-col overflow-hidden">
           {children}
         </main>
       </div>
